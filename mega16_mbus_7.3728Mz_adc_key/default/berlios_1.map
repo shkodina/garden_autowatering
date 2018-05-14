@@ -1,0 +1,681 @@
+Archive member included because of file (symbol)
+
+c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_mulsi3.o)
+                              porttimer.o (__mulsi3)
+c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_udivmodsi4.o)
+                              demo.o (__udivmodsi4)
+c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_exit.o)
+                              c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm16.o (exit)
+c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_copy_data.o)
+                              demo.o (__do_copy_data)
+c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_clear_bss.o)
+                              demo.o (__do_clear_bss)
+c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                              mbfuncother.o (memcpy)
+
+Allocating common symbols
+Common symbol       size              file
+
+pxMBFrameCBTransmitterEmpty
+                    0x2               mb.o
+pxMBPortCBTimerExpired
+                    0x2               mb.o
+ucRTUBuf            0x100             mbrtu.o
+pxMBFrameCBByteReceived
+                    0x2               mb.o
+pxMBFrameCBTransmitFSMCur
+                    0x2               mb.o
+pxMBFrameCBReceiveFSMCur
+                    0x2               mb.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm16.o
+LOAD demo.o
+LOAD mbcrc.o
+LOAD portevent.o
+LOAD portserial.o
+LOAD porttimer.o
+LOAD mb.o
+LOAD mbrtu.o
+LOAD mbfuncinput.o
+LOAD mbfuncholding.o
+LOAD mbutils.o
+LOAD mbfunccoils.o
+LOAD mbfuncdiag.o
+LOAD mbfuncdisc.o
+LOAD mbfuncother.o
+LOAD c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a
+LOAD c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5\libc.a
+LOAD c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x16ec
+ *(.vectors)
+ .vectors       0x00000000       0x54 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm16.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+ .progmem.data  0x00000054      0x200 mbcrc.o
+                0x00000254                . = ALIGN (0x2)
+                0x00000254                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000254        0x0 linker stubs
+ *(.trampolines*)
+                0x00000254                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000254                __ctors_start = .
+ *(.ctors)
+                0x00000254                __ctors_end = .
+                0x00000254                __dtors_start = .
+ *(.dtors)
+                0x00000254                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000254        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm16.o
+                0x00000254                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000254        0xc c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm16.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000260       0x16 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_copy_data.o)
+                0x00000260                __do_copy_data
+ .init4         0x00000276       0x10 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_clear_bss.o)
+                0x00000276                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000286        0x8 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm16.o
+ *(.init9)
+ *(.text)
+ .text          0x0000028e        0x4 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm16.o
+                0x0000028e                __vector_1
+                0x0000028e                __bad_interrupt
+                0x0000028e                __vector_3
+                0x0000028e                __vector_17
+                0x0000028e                __vector_19
+                0x0000028e                __vector_7
+                0x0000028e                __vector_5
+                0x0000028e                __vector_4
+                0x0000028e                __vector_9
+                0x0000028e                __vector_2
+                0x0000028e                __vector_15
+                0x0000028e                __vector_8
+                0x0000028e                __vector_14
+                0x0000028e                __vector_10
+                0x0000028e                __vector_16
+                0x0000028e                __vector_18
+                0x0000028e                __vector_20
+ .text          0x00000292      0x4f0 demo.o
+                0x00000292                swap_byte
+                0x000002b4                adc_init
+                0x000002c0                readAdc
+                0x000002d2                pinouts_init
+                0x000002da                getSummeredHumidity
+                0x0000034c                getLight
+                0x0000035c                valveClose
+                0x0000036c                valveOpen
+                0x0000037c                is_need_watering
+                0x000003b2                poll_machine
+                0x00000592                main
+                0x0000066c                eMBRegInputCB
+                0x000006e2                eMBRegHoldingCB
+                0x0000077a                eMBRegCoilsCB
+                0x0000077e                eMBRegDiscreteCB
+ .text          0x00000782       0x3c mbcrc.o
+                0x00000782                usMBCRC16
+ .text          0x000007be       0x32 portevent.o
+                0x000007be                xMBPortEventInit
+                0x000007c6                xMBPortEventPost
+                0x000007d4                xMBPortEventGet
+ .text          0x000007f0      0x15e portserial.o
+                0x000007f0                vMBPortSerialEnable
+                0x00000818                xMBPortSerialInit
+                0x0000088c                xMBPortSerialPutByte
+                0x00000892                xMBPortSerialGetByte
+                0x0000089c                __vector_12
+                0x000008ea                __vector_11
+                0x00000938                __vector_13
+ .text          0x0000094e       0xb8 porttimer.o
+                0x0000094e                vMBPortTimersEnable
+                0x00000970                vMBPortTimersDisable
+                0x00000984                xMBPortTimersInit
+                0x000009b8                __vector_6
+ .text          0x00000a06      0x2bc mb.o
+                0x00000a06                eMBInit
+                0x00000ab4                eMBRegisterCB
+                0x00000b40                eMBClose
+                0x00000b62                eMBEnable
+                0x00000b80                eMBDisable
+                0x00000ba6                eMBPoll
+ .text          0x00000cc2      0x2e6 mbrtu.o
+                0x00000cc2                eMBRTUInit
+                0x00000d34                eMBRTUStart
+                0x00000d4a                eMBRTUStop
+                0x00000d5c                eMBRTUReceive
+                0x00000dc8                eMBRTUSend
+                0x00000e62                xMBRTUReceiveFSM
+                0x00000ef4                xMBRTUTransmitFSM
+                0x00000f6c                xMBRTUTimerT35Expired
+ .text          0x00000fa8       0x9c mbfuncinput.o
+                0x00000fa8                eMBFuncReadInputRegister
+ .text          0x00001044      0x252 mbfuncholding.o
+                0x00001044                eMBFuncWriteHoldingRegister
+                0x00001080                eMBFuncWriteMultipleHoldingRegister
+                0x000010ec                eMBFuncReadHoldingRegister
+                0x00001180                eMBFuncReadWriteMultipleHoldingRegister
+ .text          0x00001296       0xce mbutils.o
+                0x00001296                xMBUtilSetBits
+                0x00001300                xMBUtilGetBits
+                0x00001350                prveMBError2Exception
+ .text          0x00001364      0x1a8 mbfunccoils.o
+                0x00001364                eMBFuncReadCoils
+                0x00001414                eMBFuncWriteCoil
+                0x00001486                eMBFuncWriteMultipleCoils
+ .text          0x0000150c        0x0 mbfuncdiag.o
+ .text          0x0000150c       0xb0 mbfuncdisc.o
+                0x0000150c                eMBFuncReadDiscreteInputs
+ .text          0x000015bc       0x98 mbfuncother.o
+                0x000015bc                eMBSetSlaveID
+                0x00001612                eMBFuncReportSlaveID
+ .text          0x00001654        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_mulsi3.o)
+ .text          0x00001654        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x00001654        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_exit.o)
+ .text          0x00001654        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_copy_data.o)
+ .text          0x00001654        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00001654        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                0x00001654                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x00001654       0x3e c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_mulsi3.o)
+                0x00001654                __mulsi3
+ .text.libgcc   0x00001692       0x44 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_udivmodsi4.o)
+                0x00001692                __udivmodsi4
+ .text.libgcc   0x000016d6        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x000016d6        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x000016d6        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_clear_bss.o)
+ .text.avr-libc
+                0x000016d6       0x12 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                0x000016d6                memcpy
+                0x000016e8                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000016e8        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_exit.o)
+                0x000016e8                _exit
+                0x000016e8                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000016e8        0x4 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x000016ec                _etext = .
+
+.data           0x00800060       0x42 load address 0x000016ec
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm16.o
+ .data          0x00800060        0x6 demo.o
+ .data          0x00800066        0x0 mbcrc.o
+ .data          0x00800066        0x0 portevent.o
+ .data          0x00800066        0x3 portserial.o
+ .data          0x00800069        0x0 porttimer.o
+ .data          0x00800069       0x31 mb.o
+ .data          0x0080009a        0x0 mbrtu.o
+ .data          0x0080009a        0x0 mbfuncinput.o
+ .data          0x0080009a        0x0 mbfuncholding.o
+ .data          0x0080009a        0x8 mbutils.o
+ .data          0x008000a2        0x0 mbfunccoils.o
+ .data          0x008000a2        0x0 mbfuncdiag.o
+ .data          0x008000a2        0x0 mbfuncdisc.o
+ .data          0x008000a2        0x0 mbfuncother.o
+ .data          0x008000a2        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_mulsi3.o)
+ .data          0x008000a2        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x008000a2        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_exit.o)
+ .data          0x008000a2        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_copy_data.o)
+ .data          0x008000a2        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_clear_bss.o)
+ .data          0x008000a2        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5\libc.a(memcpy.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x008000a2                . = ALIGN (0x2)
+                0x008000a2                _edata = .
+                0x008000a2                PROVIDE (__data_end, .)
+
+.bss            0x008000a2      0x1bd
+                0x008000a2                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x008000a2        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm16.o
+ .bss           0x008000a2       0x72 demo.o
+ .bss           0x00800114        0x0 mbcrc.o
+ .bss           0x00800114        0x2 portevent.o
+ .bss           0x00800116        0x0 portserial.o
+ .bss           0x00800116        0x2 porttimer.o
+ .bss           0x00800118       0x13 mb.o
+ .bss           0x0080012b        0x8 mbrtu.o
+ .bss           0x00800133        0x0 mbfuncinput.o
+ .bss           0x00800133        0x0 mbfuncholding.o
+ .bss           0x00800133        0x0 mbutils.o
+ .bss           0x00800133        0x0 mbfunccoils.o
+ .bss           0x00800133        0x0 mbfuncdiag.o
+ .bss           0x00800133        0x0 mbfuncdisc.o
+ .bss           0x00800133       0x22 mbfuncother.o
+ .bss           0x00800155        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_mulsi3.o)
+ .bss           0x00800155        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x00800155        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_exit.o)
+ .bss           0x00800155        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00800155        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00800155        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5\libc.a(memcpy.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x00800155        0xa mb.o
+                0x00800155                pxMBFrameCBTransmitterEmpty
+                0x00800157                pxMBPortCBTimerExpired
+                0x00800159                pxMBFrameCBByteReceived
+                0x0080015b                pxMBFrameCBTransmitFSMCur
+                0x0080015d                pxMBFrameCBReceiveFSMCur
+ COMMON         0x0080015f      0x100 mbrtu.o
+                0x0080015f                ucRTUBuf
+                0x0080025f                PROVIDE (__bss_end, .)
+                0x000016ec                __data_load_start = LOADADDR (.data)
+                0x0000172e                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0080025f        0x0
+                0x0080025f                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x0080025f                PROVIDE (__noinit_end, .)
+                0x0080025f                _end = .
+                0x0080025f                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000      0x750
+ *(.stab)
+ .stab          0x00000000      0x6cc c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm16.o
+ .stab          0x000006cc       0x84 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                                 0x90 (size before relaxing)
+
+.stabstr        0x00000000       0xe7
+ *(.stabstr)
+ .stabstr       0x00000000       0xe7 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm16.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x1a0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 demo.o
+ .debug_aranges
+                0x00000020       0x20 mbcrc.o
+ .debug_aranges
+                0x00000040       0x20 portevent.o
+ .debug_aranges
+                0x00000060       0x20 portserial.o
+ .debug_aranges
+                0x00000080       0x20 porttimer.o
+ .debug_aranges
+                0x000000a0       0x20 mb.o
+ .debug_aranges
+                0x000000c0       0x20 mbrtu.o
+ .debug_aranges
+                0x000000e0       0x20 mbfuncinput.o
+ .debug_aranges
+                0x00000100       0x20 mbfuncholding.o
+ .debug_aranges
+                0x00000120       0x20 mbutils.o
+ .debug_aranges
+                0x00000140       0x20 mbfunccoils.o
+ .debug_aranges
+                0x00000160       0x20 mbfuncdisc.o
+ .debug_aranges
+                0x00000180       0x20 mbfuncother.o
+
+.debug_pubnames
+                0x00000000      0x61a
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000      0x108 demo.o
+ .debug_pubnames
+                0x00000108       0x20 mbcrc.o
+ .debug_pubnames
+                0x00000128       0x50 portevent.o
+ .debug_pubnames
+                0x00000178       0xa2 portserial.o
+ .debug_pubnames
+                0x0000021a       0x68 porttimer.o
+ .debug_pubnames
+                0x00000282       0xf8 mb.o
+ .debug_pubnames
+                0x0000037a       0xb3 mbrtu.o
+ .debug_pubnames
+                0x0000042d       0x2f mbfuncinput.o
+ .debug_pubnames
+                0x0000045c       0xa5 mbfuncholding.o
+ .debug_pubnames
+                0x00000501       0x52 mbutils.o
+ .debug_pubnames
+                0x00000553       0x5a mbfunccoils.o
+ .debug_pubnames
+                0x000005ad       0x30 mbfuncdisc.o
+ .debug_pubnames
+                0x000005dd       0x3d mbfuncother.o
+
+.debug_info     0x00000000     0x2625
+ *(.debug_info)
+ .debug_info    0x00000000      0x6e1 demo.o
+ .debug_info    0x000006e1      0x1a8 mbcrc.o
+ .debug_info    0x00000889      0x154 portevent.o
+ .debug_info    0x000009dd      0x24e portserial.o
+ .debug_info    0x00000c2b      0x14d porttimer.o
+ .debug_info    0x00000d78      0x5f5 mb.o
+ .debug_info    0x0000136d      0x45a mbrtu.o
+ .debug_info    0x000017c7      0x1ac mbfuncinput.o
+ .debug_info    0x00001973      0x365 mbfuncholding.o
+ .debug_info    0x00001cd8      0x284 mbutils.o
+ .debug_info    0x00001f5c      0x2ed mbfunccoils.o
+ .debug_info    0x00002249        0x0 mbfuncdiag.o
+ .debug_info    0x00002249      0x1bb mbfuncdisc.o
+ .debug_info    0x00002404      0x221 mbfuncother.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0xc4d
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x287 demo.o
+ .debug_abbrev  0x00000287       0xc0 mbcrc.o
+ .debug_abbrev  0x00000347       0xb3 portevent.o
+ .debug_abbrev  0x000003fa       0xe2 portserial.o
+ .debug_abbrev  0x000004dc       0xb3 porttimer.o
+ .debug_abbrev  0x0000058f      0x179 mb.o
+ .debug_abbrev  0x00000708      0x12a mbrtu.o
+ .debug_abbrev  0x00000832       0x8b mbfuncinput.o
+ .debug_abbrev  0x000008bd       0xa4 mbfuncholding.o
+ .debug_abbrev  0x00000961       0xe6 mbutils.o
+ .debug_abbrev  0x00000a47       0xc5 mbfunccoils.o
+ .debug_abbrev  0x00000b0c        0x1 mbfuncdiag.o
+ .debug_abbrev  0x00000b0d       0x8b mbfuncdisc.o
+ .debug_abbrev  0x00000b98       0xb5 mbfuncother.o
+
+.debug_line     0x00000000     0x1bc1
+ *(.debug_line)
+ .debug_line    0x00000000      0x506 demo.o
+ .debug_line    0x00000506      0x118 mbcrc.o
+ .debug_line    0x0000061e       0xd6 portevent.o
+ .debug_line    0x000006f4      0x1e9 portserial.o
+ .debug_line    0x000008dd      0x192 porttimer.o
+ .debug_line    0x00000a6f      0x357 mb.o
+ .debug_line    0x00000dc6      0x316 mbrtu.o
+ .debug_line    0x000010dc      0x12d mbfuncinput.o
+ .debug_line    0x00001209      0x34f mbfuncholding.o
+ .debug_line    0x00001558      0x12f mbutils.o
+ .debug_line    0x00001687      0x28d mbfunccoils.o
+ .debug_line    0x00001914       0x24 mbfuncdiag.o
+ .debug_line    0x00001938      0x13c mbfuncdisc.o
+ .debug_line    0x00001a74      0x14d mbfuncother.o
+
+.debug_frame    0x00000000      0x470
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x100 demo.o
+ .debug_frame   0x00000100       0x20 mbcrc.o
+ .debug_frame   0x00000120       0x40 portevent.o
+ .debug_frame   0x00000160       0x80 portserial.o
+ .debug_frame   0x000001e0       0x50 porttimer.o
+ .debug_frame   0x00000230       0x70 mb.o
+ .debug_frame   0x000002a0       0x90 mbrtu.o
+ .debug_frame   0x00000330       0x20 mbfuncinput.o
+ .debug_frame   0x00000350       0x50 mbfuncholding.o
+ .debug_frame   0x000003a0       0x40 mbutils.o
+ .debug_frame   0x000003e0       0x40 mbfunccoils.o
+ .debug_frame   0x00000420       0x20 mbfuncdisc.o
+ .debug_frame   0x00000440       0x30 mbfuncother.o
+
+.debug_str      0x00000000      0xe96
+ *(.debug_str)
+ .debug_str     0x00000000      0x3ab demo.o
+                                0x3f3 (size before relaxing)
+ .debug_str     0x000003ab       0xe3 mbcrc.o
+                                0x1a6 (size before relaxing)
+ .debug_str     0x0000048e       0xb8 portevent.o
+                                0x1c7 (size before relaxing)
+ .debug_str     0x00000546      0x111 portserial.o
+                                0x262 (size before relaxing)
+ .debug_str     0x00000657       0xa1 porttimer.o
+                                0x1cd (size before relaxing)
+ .debug_str     0x000006f8      0x2cf mb.o
+                                0x579 (size before relaxing)
+ .debug_str     0x000009c7      0x191 mbrtu.o
+                                0x3ca (size before relaxing)
+ .debug_str     0x00000b58       0x59 mbfuncinput.o
+                                0x2dc (size before relaxing)
+ .debug_str     0x00000bb1       0xfb mbfuncholding.o
+                                0x3c6 (size before relaxing)
+ .debug_str     0x00000cac       0xa3 mbutils.o
+                                0x317 (size before relaxing)
+ .debug_str     0x00000d4f       0x90 mbfunccoils.o
+                                0x350 (size before relaxing)
+ .debug_str     0x00000ddf       0x38 mbfuncdisc.o
+                                0x2e8 (size before relaxing)
+ .debug_str     0x00000e17       0x7f mbfuncother.o
+                                0x311 (size before relaxing)
+
+.debug_loc      0x00000000     0x1b70
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x493 demo.o
+ .debug_loc     0x00000493      0x151 mbcrc.o
+ .debug_loc     0x000005e4       0x91 portevent.o
+ .debug_loc     0x00000675       0xfc portserial.o
+ .debug_loc     0x00000771       0x28 porttimer.o
+ .debug_loc     0x00000799      0x276 mb.o
+ .debug_loc     0x00000a0f      0x2cc mbrtu.o
+ .debug_loc     0x00000cdb      0x13e mbfuncinput.o
+ .debug_loc     0x00000e19      0x557 mbfuncholding.o
+ .debug_loc     0x00001370      0x1a6 mbutils.o
+ .debug_loc     0x00001516      0x395 mbfunccoils.o
+ .debug_loc     0x000018ab      0x194 mbfuncdisc.o
+ .debug_loc     0x00001a3f      0x131 mbfuncother.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(berlios_1.elf elf32-avr)
+LOAD linker stubs
+
+.debug_pubtypes
+                0x00000000      0x4db
+ .debug_pubtypes
+                0x00000000       0x7d demo.o
+ .debug_pubtypes
+                0x0000007d       0x40 mbcrc.o
+ .debug_pubtypes
+                0x000000bd       0x2c portevent.o
+ .debug_pubtypes
+                0x000000e9       0x52 portserial.o
+ .debug_pubtypes
+                0x0000013b       0x3f porttimer.o
+ .debug_pubtypes
+                0x0000017a      0x115 mb.o
+ .debug_pubtypes
+                0x0000028f       0x82 mbrtu.o
+ .debug_pubtypes
+                0x00000311       0x49 mbfuncinput.o
+ .debug_pubtypes
+                0x0000035a       0x49 mbfuncholding.o
+ .debug_pubtypes
+                0x000003a3       0x49 mbutils.o
+ .debug_pubtypes
+                0x000003ec       0x49 mbfunccoils.o
+ .debug_pubtypes
+                0x00000435       0x49 mbfuncdisc.o
+ .debug_pubtypes
+                0x0000047e       0x5d mbfuncother.o
+
+.debug_ranges   0x00000000       0x18
+ .debug_ranges  0x00000000       0x18 demo.o

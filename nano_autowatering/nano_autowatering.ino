@@ -1,7 +1,10 @@
 #include  <avr/sleep.h>
 #include  <avr/wdt.h>
+#include "ModbusRtu.h"
 
 #define LOG_MODE
+
+#define MODBUS_ID   1
 
 #define LIGHT_NIGHT 800 // default 300
 #define LIGHT_DELTA 20
